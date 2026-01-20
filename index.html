@@ -249,7 +249,7 @@ select {
 
 <header>
   <div class="header-left">
-    <a href="https://ketng91.github.io/lopanhthayket/">
+    <a href="https://ketng91.github.io/TuvungTHPTQ-homepage/">
       <i class="fa-solid fa-house"></i> Lớp Anh thầy Kết
     </a>
   </div>
@@ -337,22 +337,23 @@ document.addEventListener("DOMContentLoaded", function() {
 <script>
 const selectEl = document.getElementById("wordList");
 
-// Hàm sắp xếp options theo alphabet A-Z
-function sortOptionsAZ() {
+function sortOptionsByNumber() {
   const opts = Array.from(selectEl.options);
 
-  opts.sort((a, b) => a.text.localeCompare(b.text));
+  opts.sort((a, b) => {
+    return Number(a.value) - Number(b.value);
+  });
 
   selectEl.innerHTML = "";
   opts.forEach(o => selectEl.appendChild(o));
 }
 
-// Sắp xếp lần đầu khi load
-sortOptionsAZ();
+// sort ngay khi load
+sortOptionsByNumber();
 
-// Sắp xếp lại mỗi lần bấm mở dropdown (desktop + mobile đều nhận)
-selectEl.addEventListener("mousedown", sortOptionsAZ);
-selectEl.addEventListener("touchstart", sortOptionsAZ);
+// sort lại khi mở dropdown
+selectEl.addEventListener("mousedown", sortOptionsByNumber);
+selectEl.addEventListener("touchstart", sortOptionsByNumber);
 </script>
 
 <script>
