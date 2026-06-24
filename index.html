@@ -227,6 +227,16 @@ select {
     color: #7a4e3e;
     background-color: #fff0e1;
   }
+.speaker-icon{
+  margin-left:10px;
+  color:#4a7c59;
+  cursor:pointer;
+  font-size:18px;
+}
+
+.speaker-icon:hover{
+  color:#ff6b6b;
+}
 
   .confetti {
     position: fixed;
@@ -418,8 +428,6 @@ const data = {
   { en: "bag (n) /bæɡ/", vn: "cái túi", tick: false },
   { en: "ball (n) /bɔl/", vn: "quả bóng", tick: false },
   { en: "banana (n) /bəˈnænə/", vn: "quả chuối", tick: false },
-  ],
-  2: [
   { en: "band (n) /bænd/", vn: "ban nhạc", tick: false },
   { en: "bank (n) /bæŋk/", vn: "ngân hàng", tick: false },
   { en: "select (v) /sɪˈlɛkt/", vn: "chọn", tick: false },
@@ -471,7 +479,7 @@ const data = {
   { en: "brother (n) /ˈbrʌðər/", vn: "anh/em trai", tick: false },
   { en: "brown (adj/n) /braʊn/", vn: "màu nâu", tick: false }
   ],
-  3: [
+  2: [
 { en: "build (v) /bɪld/", vn: "xây dựng", tick: false },
   { en: "building (n) /ˈbɪldɪŋ/", vn: "tòa nhà", tick: false },
   { en: "bus (n) /bʌs/", vn: "xe buýt", tick: false },
@@ -522,15 +530,12 @@ const data = {
   { en: "award (n/v) /əˈwɔrd/", vn: "giải thưởng", tick: false },
   { en: "audio (n/adj) /ˈɔdioʊ/", vn: "âm thanh", tick: false },
   { en: "directly (adv) /dəˈrɛktli/", vn: "trực tiếp", tick: false },
-  ],
-
-   4: [
   { en: "indirect (adj) /ˌɪndəˈrɛkt/", vn: "gián tiếp", tick: false },
   { en: "bud (n) /bʌd/", vn: "chồi non", tick: false },
   { en: "bug (n) /bʌɡ/", vn: "côn trùng", tick: false },
   { en: "bullet (n) /ˈbʊlɪt/", vn: "đạn", tick: false },
   { en: "bunch (n) /bʌnʧ/", vn: "bó / đống", tick: false },
-{ en: "burn (v/n) /bɜrn/", vn: "đốt cháy", tick: false },
+  { en: "burn (v/n) /bɜrn/", vn: "đốt cháy", tick: false },
   { en: "relaxed (adj) /rɪˈlækst/", vn: "thư giãn", tick: false },
   { en: "indoor (adj) /ˈɪndɔr/", vn: "trong nhà", tick: false },
   { en: "view (n/v) /vju/", vn: "quan điểm / xem", tick: false },
@@ -544,7 +549,7 @@ const data = {
   { en: "photographer (n) /fəˈtɑɡrəfər/", vn: "nhiếp ảnh gia", tick: false },
   { en: "trend (n) /trɛnd/", vn: "xu hướng", tick: false },
   { en: "photography (n) /fəˈtɑɡrəfi/", vn: "nhiếp ảnh", tick: false },
- { en: "strength (n) /strɛŋθ/", vn: "sức mạnh", tick: false },
+  { en: "strength (n) /strɛŋθ/", vn: "sức mạnh", tick: false },
   { en: "rent (v/n) /rɛnt/", vn: "thuê", tick: false },
   { en: "stadium (n) /ˈsteɪdiəm/", vn: "sân vận động", tick: false },
   { en: "stage (n) /steɪdʒ/", vn: "giai đoạn / sân khấu", tick: false },
@@ -576,7 +581,7 @@ const data = {
   { en: "bite (v/n) /baɪt/", vn: "cắn", tick: false }
   ],
 
-  5: [
+  3: [
   { en: "neighbourhood /ˈneɪbərˌhʊd/", vn: "hàng xóm / khu vực lân cận", tick: false },
   { en: "pan /pæn/", vn: "cái chảo", tick: false },
   { en: "once /wʌns/", vn: "một lần", tick: false },
@@ -639,9 +644,6 @@ const data = {
   { en: "shelf /ʃɛlf/", vn: "cái kệ", tick: false },
   { en: "silent /ˈsaɪlənt/", vn: "im lặng", tick: false },
   { en: "silly /ˈsɪli/", vn: "ngớ ngẩn", tick: false },
-  ],
-
-  5: [
   { en: "similarly /ˈsɪmələrli/", vn: "tương tự", tick: false },
   { en: "simply /ˈsɪmpli/", vn: "đơn giản", tick: false },
   { en: "shoot /ʃut/", vn: "bắn", tick: false },
@@ -679,7 +681,10 @@ const data = {
   { en: "throat /θroʊt/", vn: "cổ họng", tick: false },
   { en: "throughout /θruˈaʊt/", vn: "xuyên suốt", tick: false },
   { en: "therefore /ˈðɛrˌfɔr/", vn: "vì vậy", tick: false },
-  { en: "this /ðɪs/", vn: "cái này", tick: false },
+  { en: "this /ðɪs/", vn: "cái này", tick: false }
+  ],
+
+  4: [
   { en: "though /ðoʊ/", vn: "mặc dù", tick: false },
   { en: "tight /taɪt/", vn: "chặt / khít", tick: false },
   { en: "till /tɪl/", vn: "cho đến khi", tick: false },
@@ -692,9 +697,6 @@ const data = {
   { en: "total /ˈtoʊtəl/", vn: "tổng cộng", tick: false },
   { en: "touch /tʌʧ/", vn: "chạm vào", tick: false },
   { en: "tournament /ˈtʊrnəmənt/", vn: "vòng thi đấu / giải đấu", tick: false },
-  ],
-
-  6: [
   { en: "tour /tʊr/", vn: "chuyến du lịch", tick: false },
   { en: "tropical /ˈtrɑpɪkəl/", vn: "nhiệt đới", tick: false },
   { en: "accordingly /əˈkɔrdɪŋli/", vn: "một cách tương ứng / do đó", tick: false },
@@ -745,9 +747,6 @@ const data = {
   { en: "altogether /ˌɔltəˈɡɛðər/", vn: "hoàn toàn / tổng cộng", tick: false },
   { en: "bake /beɪk/", vn: "nướng bánh", tick: false },
   { en: "back /bæk/", vn: "phía sau / quay lại", tick: false },
-  ],
-
-  7: [
   { en: "ambulance /ˈæmbjələns/", vn: "xe cứu thương", tick: false },
   { en: "angle /ˈæŋɡəl/", vn: "góc", tick: false },
   { en: "backwards /ˈbækwərdz/", vn: "về phía sau", tick: false },
@@ -785,7 +784,10 @@ const data = {
   { en: "bronze /brɑnz/", vn: "đồng thiếc / màu đồng", tick: false },
   { en: "coffee /ˈkɑfi/", vn: "cà phê", tick: false },
   { en: "cue /kju/", vn: "gợi ý / tín hiệu", tick: false },
-  { en: "control /kənˈtroʊl/", vn: "kiểm soát", tick: false },
+  { en: "control /kənˈtroʊl/", vn: "kiểm soát", tick: false }
+  ],
+
+  5: [
   { en: "culture /ˈkʌltʃər/", vn: "văn hóa", tick: false },
   { en: "cold /koʊld/", vn: "lạnh / sự cảm lạnh", tick: false },
   { en: "college /ˈkɑːlɪdʒ/", vn: "trường cao đẳng / đại học", tick: false },
@@ -798,9 +800,6 @@ const data = {
   { en: "depth /dɛpθ/", vn: "chiều sâu", tick: false },
   { en: "cute /kjut/", vn: "dễ thương", tick: false },
   { en: "cycle /ˈsaɪkəl/", vn: "chu kỳ / đạp xe", tick: false },
-  ],
-
-  8: [
   { en: "daily routine /ˈdeɪli ruˈtin/", vn: "thói quen hàng ngày", tick: false },
   { en: "company /ˈkʌmpəni/", vn: "công ty", tick: false },
   { en: "compare /kəmˈpɛr/", vn: "so sánh", tick: false },
@@ -851,9 +850,6 @@ const data = {
   { en: "leave /liv/", vn: "rời đi / để lại", tick: false },
   { en: "island /ˈaɪlənd/", vn: "hòn đảo", tick: false },
   { en: "lifestyle /ˈlaɪfˌstaɪl/", vn: "lối sống", tick: false },
-  ],
-
-  9: [
   { en: "computer /kəmˈpjutər/", vn: "máy tính", tick: false },
   { en: "concert /ˈkɑːnsərt/", vn: "buổi hòa nhạc", tick: false },
   { en: "conversation /ˌkɑːnvərˈseɪʃən/", vn: "cuộc hội thoại", tick: false },
@@ -891,7 +887,10 @@ const data = {
   { en: "correct /kəˈrɛkt/", vn: "đúng / sửa cho đúng", tick: false },
   { en: "ocean /ˈoʊʃən/", vn: "đại dương", tick: false },
   { en: "palm /pɑːm/", vn: "lòng bàn tay / cây cọ", tick: false },
-  { en: "print /prɪnt/", vn: "in ấn", tick: false },
+  { en: "print /prɪnt/", vn: "in ấn", tick: false }
+  ],
+
+  6: [
   { en: "patience /ˈpeɪʃəns/", vn: "sự kiên nhẫn", tick: false },
   { en: "novelist /ˈnɑːvəlɪst/", vn: "tiểu thuyết gia", tick: false },
   { en: "nowadays /ˈnaʊəˌdeɪz/", vn: "ngày nay", tick: false },
@@ -909,9 +908,6 @@ const data = {
   { en: "cost /kɔːst/", vn: "giá cả / chi phí", tick: false },
   { en: "pick /pɪk/", vn: "chọn / hái", tick: false },
   { en: "picture /ˈpɪktʃər/", vn: "bức tranh / hình ảnh", tick: false },
-  ],
-
-  10: [
   { en: "research /riˈsɜːrtʃ/", vn: "nghiên cứu", tick: false },
   { en: "play /pleɪ/", vn: "chơi / vở kịch", tick: false },
   { en: "product /ˈprɑːdʌkt/", vn: "sản phẩm", tick: false },
@@ -994,7 +990,10 @@ const data = {
   { en: "dinner /ˈdɪnər/", vn: "bữa tối", tick: false },
   { en: "dirty /ˈdɜːrti/", vn: "bẩn thỉu", tick: false },
   { en: "discuss /dɪˈskʌs/", vn: "thảo luận", tick: false },
-  { en: "dish /dɪʃ/", vn: "món ăn / cái đĩa", tick: false },
+  { en: "dish /dɪʃ/", vn: "món ăn / cái đĩa", tick: false }
+  ],
+
+  7: [
   { en: "do /du/", vn: "làm", tick: false },
   { en: "doctor /ˈdɑːktər/", vn: "bác sĩ", tick: false },
   { en: "dog /dɔːɡ/", vn: "con chó", tick: false },
@@ -1094,7 +1093,10 @@ const data = {
   { en: "kind /kaɪnd/", vn: "tốt bụng / loại", tick: false },
   { en: "kitchen /ˈkɪtʃən/", vn: "nhà bếp", tick: false },
   { en: "know /noʊ/", vn: "biết", tick: false },
-  { en: "land /lænd/", vn: "đất đất liền / hạ cánh", tick: false },
+  { en: "land /lænd/", vn: "đất đất liền / hạ cánh", tick: false }
+  ],
+
+  8: [
   { en: "language /ˈlæŋɡwɪdʒ/", vn: "ngôn ngữ", tick: false },
   { en: "large /lɑːrdʒ/", vn: "lớn / rộng", tick: false },
   { en: "last /læst/", vn: "cuối cùng / vừa qua", tick: false },
@@ -1193,7 +1195,10 @@ const data = {
   { en: "night /naɪt/", vn: "ban đêm", tick: false },
   { en: "nine /naɪn/", vn: "số chín", tick: false },
   { en: "nineteen /ˌnaɪnˈtin/", vn: "số mười chín", tick: false },
-  { en: "ninety /ˈnaɪnti/", vn: "số chín mươi", tick: false },
+  { en: "ninety /ˈnaɪnti/", vn: "số chín mươi", tick: false }
+  ],
+
+  9: [
   { en: "no one /ˈnoʊ wʌn/", vn: "không một ai", tick: false },
   { en: "nobody /ˈnoʊˌbɑːdi/", vn: "không ai", tick: false },
   { en: "north /nɔːrθ/", vn: "hướng bắc", tick: false },
@@ -1293,7 +1298,10 @@ const data = {
   { en: "quarter /ˈkwɔːrtər/", vn: "một phần tư", tick: false },
   { en: "question /ˈkwɛstʃən/", vn: "câu hỏi", tick: false },
   { en: "quick /kwɪk/", vn: "nhanh", tick: false },
-  { en: "quickly /ˈkwɪkli/", vn: "một cách nhanh chóng", tick: false },
+  { en: "quickly /ˈkwɪkli/", vn: "một cách nhanh chóng", tick: false }
+  ],
+
+  10: [
   { en: "quiet /ˈkwaɪət/", vn: "yên tĩnh", tick: false },
   { en: "quite /kwaɪt/", vn: "khá / hoàn toàn", tick: false },
   { en: "radio /ˈreɪdiˌoʊ/", vn: "đài phát thanh", tick: false },
@@ -2590,24 +2598,62 @@ function updateCounter(){
 
 document.getElementById("wordList").onchange = loadList;
 loadList();
+function speakWord(text){
+
+  speechSynthesis.cancel();
+
+  let cleanText = text;
+
+  // bỏ phiên âm /.../
+  cleanText = cleanText.split("/")[0];
+
+  // bỏ loại từ (n), (v), (adj), (phr v)...
+  cleanText = cleanText.replace(/\(.*?\)/g,"").trim();
+
+  const utter = new SpeechSynthesisUtterance(cleanText);
+
+  utter.lang = "en-US";
+  utter.rate = 0.85;
+  utter.pitch = 1;
+  utter.volume = 1;
+
+  speechSynthesis.speak(utter);
+}
 
 /********** RENDER & SORT **********/
 function renderWords(){
-  const box=document.getElementById("wordContainer");
-  box.innerHTML="";
 
-  let sorted=[...data[currList]].sort((a,b)=>b.tick - a.tick);
+  const box = document.getElementById("wordContainer");
+  box.innerHTML = "";
+
+  let sorted = [...data[currList]].sort((a,b)=>b.tick - a.tick);
 
   sorted.forEach(item=>{
-    let realIndex = data[currList].indexOf(item);
-    box.innerHTML+=`
-      <div class="word-row">
-        <span>${item.en}: ${item.vn}</span>
-        <input type="checkbox" ${item.tick?"checked":""} onclick="toggleTick(${realIndex})">
-      </div>`;
-  });
-}
 
+    let realIndex = data[currList].indexOf(item);
+
+    box.innerHTML += `
+      <div class="word-row">
+
+        <span>
+          ${item.en}: ${item.vn}
+
+          <i class="fa-solid fa-volume-high speaker-icon"
+             onclick="event.stopPropagation();speakWord(\`${item.en}\`)">
+          </i>
+
+        </span>
+
+        <input
+          type="checkbox"
+          ${item.tick ? "checked" : ""}
+          onclick="toggleTick(${realIndex})">
+
+      </div>
+    `;
+  });
+
+}
 /********** TICK UPDATE **********/
 function toggleTick(realIndex){
   data[currList][realIndex].tick = !data[currList][realIndex].tick;
